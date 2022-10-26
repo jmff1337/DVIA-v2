@@ -25,11 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white , NSAttributedStringKey.font: UIFont(name: "Helvetica-Bold", size: 20)!]
         navigationBarAppearace.titleTextAttributes = textAttributes
         
-        //Flurry Analytics code for Thirty Party Data Leakage section
-        Flurry.startSession("8RM5WHP628853HQXFKDX", with: FlurrySessionBuilder
-            .init()
-            .withCrashReporting(true)
-            .withLogLevel(FlurryLogLevelAll))
+        //Flurry Analytics code for Thirty Party Data Leakage section        
         
         return true
     }
